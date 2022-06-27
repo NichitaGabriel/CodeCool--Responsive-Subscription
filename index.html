@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <!-- displays site properly based on user's device -->
+
+  <link href="./images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+      --primary-cyan: hsl(179, 62%, 43%);
+      --primary-bright-yellow: hsl(71, 73%, 54%);
+
+      --secondary-light-gray: hsl(204, 43%, 93%);
+      --secondary-grayish-blue: hsl(218, 22%, 67%);
+
+      --background-color: #e2ecf4;
+    }
+
+    /* a {
+      text-decoration: none;
+      color: inherit;
+    } */
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--background-color);
+      font-family: 'Karla', sans-serif;
+    }
+
+    .container {
+      width: 800px;
+      border-radius: 15px;
+      background-color: white;
+      overflow: hidden;
+    }
+
+    h1 {
+      color: var(--primary-cyan);
+    }
+
+    .announcement {
+      padding-top: 25px;
+      padding-left: 50px;
+      padding-bottom: 25px;
+      padding-right: 50px;
+    }
+
+    .testing {
+      display: flex;
+      justify-content: center;
+    }
+
+    .subscription,
+    .advertisement {
+      width: 400px;
+      padding-top: 25px;
+      padding-left: 50px;
+      padding-bottom: 50px;
+      padding-right: 50px;
+      color: white;
+    }
+
+    .subscription {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--primary-cyan);
+    }
+
+    .subscription-price {
+      display: flex;
+      flex-direction: inline;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .testing-price {
+      font-size: 32px;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+    }
+
+    .testing-tag {
+      color: #68d3d2;
+      padding-left: 70px;
+      margin: 0;
+    }
+
+    .advertisement {
+      background-color: #4abebd;
+    }
+
+    button {
+      color: white;
+      background: #bfdf32;
+      border: 0;
+      height: 50px;
+      font-size: 20px;
+      border-radius: 6px;
+    }
+
+    button:hover {
+      background: rgb(21, 79, 24);
+    }
+
+    @media screen and (max-width: 700px) {
+      .container {
+        width: 400px;
+        flex-direction: column;
+      }
+
+      .testing {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .subscription,
+      .advertisement {
+        width: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="announcement">
+      <h1>Join our community</h1>
+      <p style="color: var(--primary-bright-yellow); font-size: 1.5rem; font-weight: 700;">30-day, hassle-free money
+        back guarantee</p>
+      <p style="color: #adaeb1; font-size: 1.2rem;">
+        Gain access to our full library of tutorials along with expert code reviews. Perfect for
+        any developers who are serious about honing their skills.
+      </p>
+    </div>
+
+    <div class="testing">
+      <div class="subscription">
+        <h2>Monthly Subscription</h2>
+        <div class="subscription-price">
+          <p class="testing-price"">&dollar;29</p>
+          <p class=" testing-tag">per month</p>
+        </div>
+        <p style="padding-bottom: 10px;">Full access for less than &dollar;1 a day</p>
+        <button onClick="parent.location='form-page.html'" formtarget="form-page.html">
+          Sign Up
+        </button>
+      </div>
+
+      <div class="advertisement">
+        <h2>Why Us</h2>
+        <p>
+          Tutorials by industry experts<br>
+          Peer &amp; expert code review<br>
+          Coding exercises<br>
+          Access to our GitHub repos<br>
+          Community forum<br>
+          Flashcard decks<br>
+          New videos every week
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="#">Nichita Gabriel-Ionut</a>.
+    </p>
+  </footer>
+
+</body>
+
+</html>
